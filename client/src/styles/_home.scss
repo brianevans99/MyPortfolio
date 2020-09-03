@@ -1,0 +1,68 @@
+body {
+  background-color: $gray-color;
+  color: $light-color;
+
+  hr {
+    background-color: $light-color;
+  }
+  #avatar {
+    img {
+      padding: 10px;
+    }
+  }
+  #education {
+    img {
+      width: 35px;
+    }
+    h5 {
+      margin-bottom: 0px;
+    }
+  }
+  #education,
+  #experience,
+  #interests {
+    text-transform: capitalize;
+    h2 {
+      text-align: center;
+      margin: 10px 0;
+      font-family: 'Special Elite';
+    }
+    h5,
+    h6 {
+      text-align: center;
+    }
+  }
+  #text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      text-align: center;
+      margin: 10px 0;
+      font-family: 'Special Elite';
+    }
+    h5 {
+      text-align: justify;
+    }
+    #list {
+      width: 100%;
+      padding: 10px 0;
+      display: flex;
+
+      ul {
+        max-height: 160px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      i {
+        margin: 0 10px;
+      }
+    }
+  }
+}

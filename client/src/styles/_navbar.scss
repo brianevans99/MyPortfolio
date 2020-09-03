@@ -1,0 +1,46 @@
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: $primary-color;
+  border-bottom: 4px solid $secondary-color;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Special Elite';
+    margin: 0;
+  }
+  a {
+    display: flex;
+    height: 100%;
+    font: 500 11px Lato;
+    letter-spacing: 2px;
+    padding: 0 8px 0 8px !important;
+    color: $secondary-color !important;
+    text-transform: uppercase;
+    position: relative;
+    align-items: center;
+  }
+  a:hover {
+    color: $light-color !important;
+    background-color: $secondary-color !important;
+    text-decoration: none;
+  }
+  i {
+    font-size: larger;
+  }
+  ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    list-style-type: none;
+  }
+  li {
+    height: 100%;
+  }
+}
