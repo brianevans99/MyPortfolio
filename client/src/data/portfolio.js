@@ -1,4 +1,4 @@
-import tec from '../assets/images/tec.png'
+import tec from '../assets/images/tec.jpg'
 import reactHotel from '../assets/images/reactResort.jpg'
 import devConnector from '../assets/images/showcase.jpg'
 import bravoecho from '../assets/images/BElogo.png'
