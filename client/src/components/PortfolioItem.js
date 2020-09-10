@@ -17,13 +17,15 @@ export default function Portfolio(props) {
             href={props.item.githubUrl}
             target='_blank'
             rel='noopener noreferrer'
-          >
-            <i
-              style={{ display: !props.item.githubUrl && 'none' }}
-              className='fab fa-github'
-            />
-          </a>
+          ></a>
         </h5>
+        <p className='small'>
+          <a href={props.item.deployUrl}>URL link</a>
+          <span style={{ display: !props.item.githubUrl && 'none' }}>
+            {' | '}
+            <a href={props.item.githubUrl}>Repo link</a>
+          </span>
+        </p>
         <p className='card-text'>{props.item.description}</p>
       </div>
     </div>
