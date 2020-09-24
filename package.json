@@ -1,7 +1,7 @@
 {
-  "name": "myPortfolio",
+  "name": "myportfolio",
   "version": "1.0.0",
-  "description": "Brian Evans portfolio and home page",
+  "description": "Brian Evans | portfolio and home page",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

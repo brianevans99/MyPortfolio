@@ -1,21 +1,23 @@
-import React, { Component } from 'react'
-import './Background.css'
-import Video from '../../assets/mp4/Blurred Video of Scripts Being Typed.mp4'
+import React, { Component, Fragment } from 'react'
+import BackgroundData from './BackgroundData'
+import moment from 'moment'
 
 export default class Background extends Component {
+  state = {
+    backgroundImg: BackgroundData.backgrounds[moment().day()].image,
+    class: BackgroundData.backgrounds[moment().day()].class,
+  }
+
   render() {
     return (
-      <div>
-        <div id='overlay'></div>
-        <video
-          playsinline='playsinline'
-          autoplay='autoplay'
-          muted='muted'
-          loop='loop'
+      <Fragment>
+        <div
+          className={`fixed ${this.state.class}`}
+          style={{ backgroundImage: `url(${this.state.backgroundImg})` }}
         >
-          <source src={Video} type='video/mp4' />
-        </video>
-      </div>
+          <div className='absolute bg-black bg-opacity-50 w-full h-full z-10' />
+        </div>
+      </Fragment>
     )
   }
 }
