@@ -2,7 +2,7 @@ module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
   },
-  purge: [],
+  purge: ['./src/**/*.html', './src/**/*.js', './src/**/*.jsx'],
   theme: {
     extend: {
       gridTemplateRows: {
