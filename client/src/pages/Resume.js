@@ -14,6 +14,7 @@ const divStyle = {
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundAttachment: 'fixed',
+  backgroundPosition: 'center center',
 }
 const baseCSS =
   // transform breaks in Firefox
@@ -42,7 +43,7 @@ function Resume() {
   ))
   const interests = pageData.interests.map((item) => <li>{item}</li>)
   return (
-    <div className='xl:h-screen bg-gray-900 text-gray-400'>
+    <div className='bg-gray-900 text-gray-400'>
       <div className='container-fluid h-full grid grid-cols-6 xl:grid-rows-12 gap-1 mx-auto p-0 overflow-hidden'>
         <div
           style={divStyle}

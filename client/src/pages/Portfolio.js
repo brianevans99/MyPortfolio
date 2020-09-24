@@ -15,7 +15,7 @@ const divStyle = {
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundAttachment: 'fixed',
-  // backgroundPosition: 'right top',
+  backgroundPosition: 'center center',
 }
 const baseCSS =
   // transform breaks in Firefox
