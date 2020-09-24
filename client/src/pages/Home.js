@@ -30,8 +30,8 @@ function Home() {
     </div>
   ))
   return (
-    <div className='w-screen h-screen bg-gray-900'>
-      <div className='container-fluid h-full grid grid-cols-6 md:grid-rows-10 lg:grid-rows-8 gap-1 mx-auto p-0 overflow-hidden'>
+    <div className='bg-gray-900'>
+      <div className='container-fluid h-screen grid grid-cols-6 md:grid-rows-10 lg:grid-rows-8 gap-1 mx-auto p-0 overflow-hidden'>
         <div
           style={divStyle}
           className={`${baseCSS} p-2 col-span-4 md:col-span-2 row-span-4 `}
@@ -62,13 +62,13 @@ function Home() {
         </div>
 
         <div
-          className={`${baseCSS} col-span-6 md:col-span-4 row-span-2 md:row-span-3 transition duration-200 ease-in-out hover:bg-gray-900 hover:scale-105 transform`}
+          className={`${baseCSS} col-span-6 md:col-span-4 row-span-2 md:row-span-3 transition duration-200 ease-in-out hover:bg-gray-900 hover:scale-105 transform py-2`}
         >
           <Info />
         </div>
 
         <div
-          className={`${baseCSS} col-span-6 lg:col-span-3 row-span-3 lg:row-span-3 px-6 md:px-12 xl:px-24 font-semibold text-gray-300 text-justify text-lg md:text-xl transition duration-200 ease-in-out hover:bg-gray-900 hover:scale-105 transform`}
+          className={`${baseCSS} col-span-6 lg:col-span-3 row-span-3 lg:row-span-3 px-6 md:px-12 xl:px-24 font-semibold text-gray-300 text-justify text-lg md:text-xl transition duration-200 ease-in-out hover:bg-gray-900 hover:scale-105 transform md:py-24`}
         >
           <Paragraph text={pageData.opening.text} />
         </div>
@@ -76,11 +76,12 @@ function Home() {
         <div
           className={`${baseCSS} col-span-6 lg:col-span-3 row-span-2 lg:row-span-3 text-gray-300 font-semibold transition duration-200 ease-in-out hover:bg-gray-900 hover:scale-105 transform`}
         >
-          <div className='grid grid-flow-col grid-rows-5 sm:grid-rows-3'>
+          <div className='grid grid-flow-col grid-rows-5 sm:grid-rows-3 py-2'>
             {skills}
           </div>
         </div>
         <div style={divStyle} className={`${baseCSS} col-span-6 py-1 `}>
+          {/* <Paragraph text={pageData.opening.text} /> */}
           <Date />
         </div>
       </div>
