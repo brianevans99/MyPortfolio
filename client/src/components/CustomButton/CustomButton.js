@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function CustomButton({ link, name, icon }) {
   return (
-    <div className='flex justify-center items-center transition duration-200 ease-in-out hover:bg-blue-500 transform'>
+    <div className='flex justify-center font-semibold text-lg items-center transition duration-200 ease-in-out hover:bg-blue-700 transform'>
       <Link to={link}>
         <div className='absolute top-0 left-0 w-full h-full' />
       </Link>

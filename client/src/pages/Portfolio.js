@@ -8,7 +8,6 @@ import Social from '../components/Social/Social'
 import Paragraph from '../components/Paragraph/Paragraph'
 import PortfolioItem from '../components/PortfolioItem'
 import PortfolioData from '../data/portfolio'
-import Date from '../components/Date/Date'
 
 const divStyle = {
   backgroundImage: `url(${milkyWay})`,
@@ -76,13 +75,6 @@ function Portfolio() {
         </div>
 
         {projects}
-
-        <div
-          style={divStyle}
-          className={`${baseCSS} col-span-6 row-span-1 py-1 `}
-        >
-          <Date />
-        </div>
       </div>
     </div>
   )

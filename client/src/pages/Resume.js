@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Header from '../components/Header/Header'
 import milkyWay from '../assets/images/backgrounds/milkyWay-min.webp'
 import avatar from '../assets/images/avatar.png'
 import Avatar from '../components/Avatar/Avatar'
 import { FaHome, FaFolderOpen } from 'react-icons/fa'
 import Social from '../components/Social/Social'
 import Paragraph from '../components/Paragraph/Paragraph'
-import Date from '../components/Date/Date'
 import pageData from '../data/data'
 
 const divStyle = {
@@ -108,10 +108,6 @@ function Resume() {
           <div className='flex justify-center px-8 capitalize'>
             <ul>{interests}</ul>
           </div>
-        </div>
-
-        <div style={divStyle} className={`${baseCSS} col-span-6 py-1 `}>
-          <Date />
         </div>
       </div>
     </div>
