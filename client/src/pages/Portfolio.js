@@ -51,7 +51,7 @@ function Portfolio() {
         </div>
 
         <div
-          className={`${baseCSS} items-center col-span-2 text-gray-300 text-lg transition duration-200 ease-in-out hover:bg-blue-500 hover:scale-105 transform `}
+          className={`${baseCSS} items-center col-span-2 text-gray-300 text-lg transition duration-200 ease-in-out hover:bg-blue-500 transform `}
         >
           <Link to='/'>
             <div className='absolute top-0 left-0 w-full h-full' />
@@ -60,7 +60,7 @@ function Portfolio() {
           <div className='mx-2'>Home</div>
         </div>
         <div
-          className={`${baseCSS} items-center col-span-2 text-gray-300 text-lg transition duration-200 ease-in-out hover:bg-blue-500 hover:scale-105 transform`}
+          className={`${baseCSS} items-center col-span-2 text-gray-300 text-lg transition duration-200 ease-in-out hover:bg-blue-500 transform`}
         >
           <Link to='/resume'>
             <div className='absolute top-0 left-0 w-full h-full' />

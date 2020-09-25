@@ -8,12 +8,14 @@ import NotFound from './pages/NotFound'
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route path='/portfolio' component={Portfolio} />
-        <Route path='/resume' component={Resume} />
-        <Route component={NotFound} />
-      </Switch>
+      <div className='h-screen bg-black'>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/portfolio' component={Portfolio} />
+          <Route path='/resume' component={Resume} />
+          <Route component={NotFound} />
+        </Switch>
+      </div>
     </Router>
   )
 }

@@ -12,9 +12,9 @@ export default {
   ],
   opening: {
     id: 1,
+    header: 'Hello!',
     text:
-      "Hello! I'm currently seeking a professional setting to further advance my passion for web design. Check out my resume and portfolio links above. Thanks!",
-    class: 'text-xl text-justify leading-tight p-2',
+      "I'm currently seeking a professional setting to further advance my passion for web design. Check out my resume and portfolio links above. Thanks!",
   },
   skills: [
     {
