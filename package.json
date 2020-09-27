@@ -16,12 +16,5 @@
   "devDependencies": {
     "nodemon": "^2.0.4",
     "concurrently": "^5.2.0"
-  },
-  "dependencies": {
-    "config": "^3.2.5",
-    "express": "^4.17.1",
-    "express-validator": "^6.4.0",
-    "moment": "^2.24.0",
-    "mongoose": "^5.8.11"
   }
 }
