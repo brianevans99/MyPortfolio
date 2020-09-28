@@ -4,8 +4,8 @@ Link to live site: www.brianevans99.com
 
 ### Description
 
-This is the repo for my personal web site that shows my portfolio, resume and just overall information about me. I updated my portfolio regularly with new projects as they are completed.
+This is the repo for my personal website that displays my portfolio, resume and overall information about me. I update my portfolio regularly with new projects as they are completed.
 
 ### Technologies
 
-This project uses React for front end design and styling was accomplished with CSS/Sass.
+This project uses React for front end design and a simple back end server utilizing Express. Styling is accomplished with Tailwind CSS and the Font Awesome library for icons.

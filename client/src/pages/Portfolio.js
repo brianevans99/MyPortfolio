@@ -12,7 +12,7 @@ const hover =
 function Portfolio() {
   const projects = PortfolioData.map((item) => (
     <div
-      id={item.id}
+      key={item.id}
       className={`${baseCSS} ${hover} col-span-4 sm:col-span-2 lg:col-span-1 text-justify p-2`}
     >
       <PortfolioItem

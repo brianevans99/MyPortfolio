@@ -18,7 +18,7 @@ export default function Info() {
       </div>
       <div className='flex items-center mx-4'>
         <div className='mx-1 text-blue-400 '>{data.personalInfo[6]}</div>
-        <div className='mx-1 text-orange-600 text-lg md:text-2xl font-semibold'>
+        <div className='mx-1 text-orange-600 sm:text-2xl font-semibold'>
           {data.personalInfo[7]}
         </div>
       </div>

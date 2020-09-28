@@ -8,6 +8,16 @@ import sidelines from '../assets/images/sidelinesGrille.jpg'
 export default [
   {
     id: 1,
+    projectTitle: 'Bravo Echo Web Development',
+    projectImg: bravoecho,
+    projectImgAlt: 'Bravo Echo Web Development | Affordable Web Presence',
+    githubUrl: 'https://github.com/brianevans99/BravoEcho',
+    deployUrl: 'http://www.bravoechoweb.com',
+    description:
+      'As a sole proprietor, my passion is to provide small businesses with a web presence that is eye-catching, marketable and affordable.  Built with NodeJS, React and a few CSS tricks.',
+  },
+  {
+    id: 2,
     projectTitle: 'Travel Experience Co.',
     projectImg: tec,
     projectImgAlt: 'Travel Experience Co client website by Brian Evans',
@@ -17,7 +27,7 @@ export default [
       'This project was a private client website makeover.  Built with React and TailwindCSS, this single-page applicaiton appeals to and is marketed towards the travel seeker.',
   },
   {
-    id: 2,
+    id: 3,
     projectTitle: 'React Resort Hotel',
     projectImg: reactHotel,
     projectImgAlt: 'React Resort Hotel site by Brian Evans',
@@ -27,7 +37,7 @@ export default [
       'A React website project displaying hotel room options and includes a sorting function.  Built using Node.js, this site employs API calls from Contentful.com to retrieve stored data.',
   },
   {
-    id: 3,
+    id: 4,
     projectTitle: 'Developer Connector',
     projectImg: devConnector,
     projectImgAlt: 'Developer Connector by Brian Evans',
@@ -37,7 +47,7 @@ export default [
       'A fully deployed MERN stack project where users can login and interact with personal profiles and message posting',
   },
   {
-    id: 4,
+    id: 5,
     projectTitle: 'Boys to Men',
     projectImg: boysToMen,
     projectImgAlt: 'Boys to Men website by Brian Evans',
@@ -47,23 +57,13 @@ export default [
       'Client website designed as part of a non-profit donation. Built with React and uses the Bootstrap and Styled Components packages for styling, as well as consuming an API for random verse display.',
   },
   {
-    id: 5,
+    id: 6,
     projectTitle: 'Sidelines Grille',
     projectImg: sidelines,
     projectImgAlt: 'Sidelines Grille Holly Springs website by Brian Evans',
     deployUrl: 'http://www.sidelinesgrillehollysprings.com',
     description:
       'A Wordpress designed and hosted website for a local restaurant in Holly Springs, GA',
-  },
-  {
-    id: 6,
-    projectTitle: 'Bravo Echo Web Development',
-    projectImg: bravoecho,
-    projectImgAlt: 'Bravo Echo Web Development | Affordable Web Presence',
-    githubUrl: 'https://github.com/brianevans99/BravoEcho',
-    deployUrl: 'http://www.bravoechoweb.com',
-    description:
-      'As a sole proprietor, my passion is to provide small businesses with a web presence that is eye-catching, marketable and affordable.  Built with NodeJS, React and a few CSS tricks.',
   },
   // {
   //   id: 5,
@@ -75,15 +75,6 @@ export default [
   //   deployUrl: 'https://teamproject2.herokuapp.com',
   //   description:
   //     'A text based role-playing game built with NodeJS, Express, javascript and Bootstrap',
-  // },
-  // {
-  //   id: 6,
-  //   projectTitle: 'Sidelines Grille',
-  //   projectImg: sidelines,
-  //   projectImgAlt: 'Sidelines Grille Holly Springs website by Brian Evans',
-  //   deployUrl: 'http://www.sidelinesgrillehollysprings.com',
-  //   description:
-  //     'A Wordpress designed and hosted website for a local restaurant in Holly Springs, GA',
   // },
   // {
   //   id: 7,

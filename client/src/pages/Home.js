@@ -23,7 +23,9 @@ function Home() {
           icon2={<FaFileAlt />}
         />
       </div>
-      <div className={`${baseCSS} ${hover} col-span-4 flex justify-center p-8`}>
+      <div
+        className={`${baseCSS} ${hover} col-span-4 flex justify-center p-2 sm:p-8`}
+      >
         <Info />
       </div>
       <div

@@ -31,11 +31,13 @@ function Resume() {
     </div>
   ))
   const interests = pageData.interests.map((item) => (
-    <li className='text-gray-500'>{item}</li>
+    <li key={item} className='text-gray-500'>
+      {item}
+    </li>
   ))
   return (
-    <div className='grid grid-cols-3 gap-1 bg-gray-900 text-gray-400 overflow-hidden'>
-      <div className={`${baseCSS} col-span-3`}>
+    <div className='grid grid-cols-4 lg:grid-cols-3 gap-1 bg-gray-900 text-gray-400 overflow-hidden'>
+      <div className={`${baseCSS} col-span-4`}>
         <Header
           link1={'/'}
           name1={'home'}
@@ -45,11 +47,11 @@ function Resume() {
           icon2={<FaFolderOpen />}
         />
       </div>
-      <div className={`${baseCSS} ${hover} col-span-3 flex justify-center`}>
+      <div className={`${baseCSS} ${hover} col-span-4 flex justify-center`}>
         <Paragraph header='About me...' />
       </div>
       <div
-        className={`${baseCSS} ${hover} col-span-3 lg:col-span-1 border-b-0 lg:border-b-4 border-gray-900 py-2 px-8`}
+        className={`${baseCSS} ${hover} col-span-4 lg:col-span-1 border-b-0 lg:border-b-4 border-gray-900 py-2 px-8`}
       >
         <div className={headTextCSS}>education:</div>
         <div className='font-semibold text-center capitalize '>
@@ -61,13 +63,13 @@ function Resume() {
         <div className='divide-y divide-gray-900'>{education}</div>
       </div>
       <div
-        className={`${baseCSS} ${hover} col-span-3 lg:col-span-1 border-b-0 lg:border-b-4 border-gray-900 py-2 px-8`}
+        className={`${baseCSS} ${hover} col-span-4 lg:col-span-1 border-b-0 lg:border-b-4 border-gray-900 py-2 px-8`}
       >
         <div className={headTextCSS}>professional experience:</div>
         <div className='divide-y divide-gray-900'>{experience}</div>
       </div>
       <div
-        className={`${baseCSS} ${hover} col-span-3 lg:col-span-1 border-b-4 border-gray-900 py-2 px-8`}
+        className={`${baseCSS} ${hover} col-span-4 lg:col-span-1 border-b-4 border-gray-900 py-2 px-8`}
       >
         <div className={headTextCSS}>other interests:</div>
         <div className='flex justify-center px-8 capitalize'>
