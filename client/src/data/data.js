@@ -85,19 +85,19 @@ export default {
       id: 1,
       company: 'Bravo Echo Web Development',
       role:
-        'sole proprietor, designing and managing local business websites and ad campaigns',
+        'Sole proprietor - Designing and managing local business websites and ad campaigns.',
     },
     {
       id: 2,
       company: 'Design Options',
       role:
-        'partnership, maintained ecommerce presence through shopify and woocommerce',
+        'Partnership - Maintained ecommerce presence using shopify and woocommerce.',
     },
     {
       id: 3,
       company: 'Southeastern Engineering',
       role:
-        "Managed federally funded Ga. Department of Transportation projects for local government client's within the state. Recorded and managed database updates for project and client tracking and hosted monthly teleconferences with involved parties. Guided clients through design and funding processes to keep projects on time and on budget.",
+        "Managed federally funded Ga. Department of Transportation projects for local government client's within the state. Recorded and managed database updates for project and client tracking and hosted monthly teleconferences with involved parties.",
     },
   ],
   interests: [

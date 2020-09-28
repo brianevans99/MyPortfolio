@@ -15,18 +15,18 @@ function Resume() {
   const education = edu.periods.map((item) => (
     <ul key={item.id} className='my-4'>
       <li>
-        <span className='font-bold'>Term: </span>
-        <span className='text-gray-500'>{item.term}</span>
+        <span className='font-bold '>Term: </span>
+        <span className='text-gray-500 capitalize'>{item.term}</span>
       </li>
       <li>
         <span className='font-bold'>Program: </span>
-        <span className='text-gray-500'>{item.program}</span>
+        <span className='text-gray-500 capitalize'>{item.program}</span>
       </li>
     </ul>
   ))
   const experience = pageData.experience.map((item) => (
     <div className='my-4' key={item.id}>
-      <span className='font-bold'>{item.company}:</span>
+      <span className='font-bold capitalize'>{item.company}:</span>
       <span className='text-gray-500'> {item.role}</span>
     </div>
   ))
