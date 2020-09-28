@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaFolderOpen, FaFileAlt } from 'react-icons/fa'
 import Header from '../components/Header/Header'
 import Info from '../components/Info/Info'
 import Paragraph from '../components/Paragraph/Paragraph'
@@ -11,27 +12,36 @@ const hover =
 
 function Home() {
   return (
-    <div className='grid grid-cols-3 gap-1 bg-gray-900 text-gray-400 overflow-hidden'>
-      <div className={`${baseCSS} col-span-3`}>
-        <Header />
+    <div className='grid grid-cols-4 gap-1 bg-gray-900 text-gray-400 overflow-hidden'>
+      <div className={`${baseCSS} col-span-4`}>
+        <Header
+          link1={'/portfolio'}
+          name1={'portfolio'}
+          icon1={<FaFolderOpen />}
+          link2={'/resume'}
+          name2={'resume'}
+          icon2={<FaFileAlt />}
+        />
       </div>
-      <div className={`${baseCSS} ${hover} col-span-3 flex justify-center p-8`}>
+      <div className={`${baseCSS} ${hover} col-span-4 flex justify-center p-8`}>
         <Info />
       </div>
-      <div className={`${baseCSS} ${hover} col-span-3 lg:col-span-1`}>
+      <div
+        className={`${baseCSS} ${hover} col-span-4 lg:col-span-2 border-b-0 lg:border-b-4 border-gray-900 px-8`}
+      >
         <Paragraph
           header={pageData.opening.header}
           text={pageData.opening.text}
         />
       </div>
       <div
-        className={`${baseCSS} ${hover} col-span-3 lg:col-span-2 flex justify-center`}
+        className={`${baseCSS} ${hover} col-span-4 lg:col-span-2 flex justify-center border-b-4 border-gray-900`}
       >
         <Skills />
       </div>
-      <div
+      {/* <div
         className={`bg-black hidden lg:flex row-span-2 col-span-3 h-64`}
-      ></div>
+      ></div> */}
     </div>
   )
 }

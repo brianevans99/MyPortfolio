@@ -10,7 +10,6 @@ import {
 } from 'react-icons/fa'
 import Avatar from '../components/Avatar/Avatar'
 import Social from '../components/Social/Social'
-import Date from '../components/Date/Date'
 
 const divStyle = {
   backgroundImage: `url(${milkyWay})`,
@@ -85,10 +84,6 @@ function NotFound() {
               </div>
             </div>
           </div>
-        </div>
-
-        <div style={divStyle} className={`${baseCSS} col-span-6 py-1 `}>
-          <Date />
         </div>
       </div>
     </div>

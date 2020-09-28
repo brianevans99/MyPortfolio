@@ -1,113 +1,77 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Header from '../components/Header/Header'
-import milkyWay from '../assets/images/backgrounds/milkyWay-min.webp'
-import avatar from '../assets/images/avatar.png'
-import Avatar from '../components/Avatar/Avatar'
 import { FaHome, FaFolderOpen } from 'react-icons/fa'
-import Social from '../components/Social/Social'
 import Paragraph from '../components/Paragraph/Paragraph'
 import pageData from '../data/data'
 
-const divStyle = {
-  backgroundImage: `url(${milkyWay})`,
-  backgroundRepeat: 'no-repeat',
-  backgroundSize: 'cover',
-  backgroundAttachment: 'fixed',
-  backgroundPosition: 'center center',
-}
-const baseCSS =
-  // transform breaks in Firefox
-  'cursor-pointer flex justify-center bg-black'
-// hover:opacity-75 hover:scale-105 transition ease-in-out duration-500'
+const baseCSS = 'cursor-pointer bg-black'
+const hover =
+  'transition duration-200 ease-in-out hover:bg-gray-900 hover:scale-105 transform'
+const headTextCSS =
+  'font-mono font-bold text-center text-2xl leading-snug capitalize'
 
 function Resume() {
   let edu = pageData.education
   const education = edu.periods.map((item) => (
-    <ul key={item.id} className='m-2'>
+    <ul key={item.id} className='my-4'>
       <li>
-        <span className='font-bold'>term: </span>
-        {item.term}
+        <span className='font-bold'>Term: </span>
+        <span className='text-gray-500'>{item.term}</span>
       </li>
       <li>
-        <span className='font-bold'>program: </span>
-        {item.program}
+        <span className='font-bold'>Program: </span>
+        <span className='text-gray-500'>{item.program}</span>
       </li>
     </ul>
   ))
   const experience = pageData.experience.map((item) => (
-    <div className='my-2' key={item.id}>
+    <div className='my-4' key={item.id}>
       <span className='font-bold'>{item.company}:</span>
-      <span className=''> {item.role}</span>
+      <span className='text-gray-500'> {item.role}</span>
     </div>
   ))
-  const interests = pageData.interests.map((item) => <li>{item}</li>)
+  const interests = pageData.interests.map((item) => (
+    <li className='text-gray-500'>{item}</li>
+  ))
   return (
-    <div className='bg-gray-900 text-gray-400'>
-      <div className='container-fluid h-full grid grid-cols-6 xl:grid-rows-12 gap-1 mx-auto p-0 overflow-hidden'>
-        <div
-          style={divStyle}
-          className={`${baseCSS} items-center p-2 col-span-4 row-span-2 xl:row-span-4`}
-        >
-          <div className='flex flex-col items-center'>
-            <Avatar headshot={avatar} />
-            <Social />
-          </div>
+    <div className='grid grid-cols-3 gap-1 bg-gray-900 text-gray-400 overflow-hidden'>
+      <div className={`${baseCSS} col-span-3`}>
+        <Header
+          link1={'/'}
+          name1={'home'}
+          icon1={<FaHome />}
+          link2={'/portfolio'}
+          name2={'portfolio'}
+          icon2={<FaFolderOpen />}
+        />
+      </div>
+      <div className={`${baseCSS} ${hover} col-span-3 flex justify-center`}>
+        <Paragraph header='About me...' />
+      </div>
+      <div
+        className={`${baseCSS} ${hover} col-span-3 lg:col-span-1 border-b-0 lg:border-b-4 border-gray-900 py-2 px-8`}
+      >
+        <div className={headTextCSS}>education:</div>
+        <div className='font-semibold text-center capitalize '>
+          {edu.school}
         </div>
-
-        <div
-          className={`${baseCSS} items-center col-span-2 xl:row-span-2 text-gray-300 text-lg transition duration-200 ease-in-out hover:bg-blue-500 transform `}
-        >
-          <Link to='/'>
-            <div className='absolute top-0 left-0 w-full h-full' />
-          </Link>
-          <FaHome />
-          <div className='mx-2'>Home</div>
+        <div className='font-semibold text-center capitalize '>
+          {edu.location}
         </div>
-        <div
-          className={`${baseCSS} items-center col-span-2 xl:row-span-2 text-gray-300 text-lg transition duration-200 ease-in-out hover:bg-blue-500 transform`}
-        >
-          <Link to='/portfolio'>
-            <div className='absolute top-0 left-0 w-full h-full' />
-          </Link>
-          <FaFolderOpen />
-          <div className='mx-2'>Portfolio</div>
-        </div>
-
-        <div
-          className={`${baseCSS} items-center col-span-6 row-span-1 text-gray-300 transition duration-200 ease-in-out hover:bg-gray-900 hover:scale-105 transform py-1`}
-        >
-          <Paragraph header='About me...' />
-        </div>
-
-        <div
-          className={`${baseCSS} flex flex-col col-span-6 xl:col-span-2 xl:row-span-6 transition duration-200 ease-in-out hover:bg-gray-900 px-1 capitalize`}
-        >
-          <div className='font-bold text-center text-2xl leading-snug'>
-            {edu.school}
-          </div>
-          <div className='font-semibold text-center text-lg'>
-            {edu.location}
-          </div>
-          <div className='px-8 flex justify-center'>{education}</div>
-        </div>
-        <div
-          className={`${baseCSS} flex flex-col col-span-6 xl:col-span-2 xl:row-span-6 transition duration-200 ease-in-out hover:bg-gray-900 px-2 `}
-        >
-          <div className='font-bold text-center text-2xl leading-snug capitalize'>
-            Professional experience
-          </div>
-          <div className='px-8'>{experience}</div>
-        </div>
-        <div
-          className={`${baseCSS} flex flex-col col-span-6 xl:col-span-2 xl:row-span-6 transition duration-200 ease-in-out hover:bg-gray-900 px-2 `}
-        >
-          <div className='font-bold text-center text-2xl leading-snug capitalize'>
-            Other interests
-          </div>
-          <div className='flex justify-center px-8 capitalize'>
-            <ul>{interests}</ul>
-          </div>
+        <div className='divide-y divide-gray-900'>{education}</div>
+      </div>
+      <div
+        className={`${baseCSS} ${hover} col-span-3 lg:col-span-1 border-b-0 lg:border-b-4 border-gray-900 py-2 px-8`}
+      >
+        <div className={headTextCSS}>professional experience:</div>
+        <div className='divide-y divide-gray-900'>{experience}</div>
+      </div>
+      <div
+        className={`${baseCSS} ${hover} col-span-3 lg:col-span-1 border-b-4 border-gray-900 py-2 px-8`}
+      >
+        <div className={headTextCSS}>other interests:</div>
+        <div className='flex justify-center px-8 capitalize'>
+          <ul>{interests}</ul>
         </div>
       </div>
     </div>

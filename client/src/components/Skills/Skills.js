@@ -10,7 +10,7 @@ export default function Skills() {
     </div>
   ))
   return (
-    <div className='grid grid-rows-5 grid-cols-2 grid-flow-col py-4'>
+    <div className='grid grid-rows-5 grid-cols-2 grid-flow-col font-semibold text-lg md:text-xl py-4'>
       {skills}
     </div>
   )
