@@ -37,13 +37,13 @@ function Home() {
         />
       </div>
       <div
-        className={`${baseCSS} ${hover} col-span-4 lg:col-span-2 flex justify-center border-b-4 border-gray-900`}
+        className={`${baseCSS} ${hover} col-span-4 lg:col-span-2 flex flex-col items-center border-b-4 border-gray-900`}
       >
+        <div className='font-semibold text-lg md:text-2xl py-1'>
+          Skilled in...
+        </div>
         <Skills />
       </div>
-      {/* <div
-        className={`bg-black hidden lg:flex row-span-2 col-span-3 h-64`}
-      ></div> */}
     </div>
   )
 }
