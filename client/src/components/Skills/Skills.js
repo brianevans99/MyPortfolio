@@ -1,12 +1,12 @@
 import React from 'react'
-import { FaCheck } from 'react-icons/fa'
+// import { FaCheck } from 'react-icons/fa'
 import pageData from '../../data/data'
 
 export default function Skills() {
   const skills = pageData.skills.map((item) => (
     <div key={item.id} className='flex items-center px-2'>
-      <div className='text-green-500 mr-2'>{!item.learning && <FaCheck />}</div>
-      <div className=''>{item.skill}</div>
+      <div className='text-green-500 mr-1 w-6 md:w-8 pb-1'>{item.icon}</div>
+      <div className='pb-1'>{item.skill}</div>
     </div>
   ))
   return (
