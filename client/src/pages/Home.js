@@ -5,6 +5,10 @@ import Info from '../components/Info/Info'
 import Paragraph from '../components/Paragraph/Paragraph'
 import Skills from '../components/Skills/Skills'
 import pageData from '../data/data'
+import { Player } from 'video-react'
+import video from '../assets/videos/myVideo.mp4'
+import videoPoster from '../assets/images/videoPoster.gif'
+import 'video-react/dist/video-react.css'
 
 const baseCSS = 'cursor-pointer bg-black'
 const hover =
@@ -31,13 +35,14 @@ function Home() {
       <div
         className={`${baseCSS} ${hover} col-span-4 lg:col-span-2 border-b-0 lg:border-b-4 border-gray-900 px-8`}
       >
-        <Paragraph
+        {/* <Paragraph
           header={pageData.opening.header}
           text={pageData.opening.text}
-        />
+        /> */}
+        <Player playsInline src={video} poster={videoPoster} />
       </div>
       <div
-        className={`${baseCSS} ${hover} col-span-4 lg:col-span-2 flex flex-col items-center border-b-4 border-gray-900`}
+        className={`${baseCSS} ${hover} col-span-4 lg:col-span-2 flex flex-col justify-center items-center border-b-4 border-gray-900`}
       >
         <div className='font-semibold text-lg md:text-2xl py-1'>
           Skilled in...
