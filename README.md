@@ -2,7 +2,7 @@
 
 ### This project is a static React website for simply displaying my information and project portfolio.
 
-### Live link : [Brian Evans](http://www.brianevans99.com/ "Brian's portfolio")
+### Live link : [www.brianevans99.com](http://www.brianevans99.com/ "Brian's portfolio")
 
 ---
 
@@ -10,7 +10,7 @@
 
 ## Project Status
 
-This is about the 3rd re-design of my portfolio site since I've been developing with React. My goal each time is to make my personal website as eye-catching, lightweight and quick-loading as possible.
+Welcome to my portfolio and personal information website. In each release, my goal is to make it as eye-catching, lightweight and fast-loading as possible.
 
 ## Technologies
 
@@ -18,4 +18,4 @@ This project uses React for front-end design and a simple back-end server utiliz
 
 ## Future Development
 
-There are no plans to develop this web application further.
+Future releases of this website will include a blog section and a contact form.
