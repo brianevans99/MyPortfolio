@@ -29,7 +29,10 @@ export default function Social() {
   return (
     <Fragment>
       <ul className='grid gap-4 grid-cols-4 text-xl pt-2'>{socialIcons}</ul>
-      <ul className='font-semibold text-xl text-gray-300'>{contactInfo}</ul>
+      {/* <ul className='font-semibold text-xl text-gray-300'>{contactInfo}</ul> */}
+      <ul className='font-semibold text-xl text-gray-300'>
+        Hi. Please contact me through LinkedIn.
+      </ul>
     </Fragment>
   )
 }
